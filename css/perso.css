@@ -1,0 +1,107 @@
+/* CSS de la sélection des personnages */
+body {
+    background-image: repeating-linear-gradient(-45deg,#302f2f,#302f2f 6px,#2a2929 0,#2a2929 12px);
+}
+
+h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+#perso-container {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    z-index: 1;
+
+    width: 35%;
+    height: auto;
+    background-color: #A3E4F9;
+
+    border: solid white 3px;
+    display: grid;
+    grid-template-columns: repeat(6,16.66%);
+    grid-template-rows: repeat(6,16.66%);
+}
+
+#perso-container img {
+    width: 100%;
+    height: auto;
+}
+
+#perso-choisi {
+    position: absolute;
+    z-index: 1;
+    border: solid white 5px;
+
+    top: 15%;
+    left: 60%;
+
+    width: 20%;
+    height: auto;
+    aspect-ratio: 300/500; 
+    background-color: black;
+}
+
+/*
+#carteMario, #carteLuigi, #cartePeach, #carteDaisy, #carteHarmonie, #carteMetalMario, #carteYoshi, #carteToad,
+#carteKoopa, #carteMaskas, #carteLakitu, #carteToadette, #carteBebeMario, #carteBebeLuigi, #carteBebePeach, #carteBebeDaisy, 
+#carteBebeHarmonie, #cartePeachRose, #carteBowser, #carteDonkeyKong, #carteWario, #carteWaluigi, #carteIggy, #carteRoy, 
+#carteLemmy, #carteLarry, #carteWendy, #carteLudwig, #carteMorton, #carteBowserSkelet, #carteMarioTanuki, #cartePeachChat, #carteLink,
+#carteVillageois, #carteVillageoise, #carteMarie*/
+
+#perso-choisi div  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+}
+
+#perso-choisi div img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#formValidation{
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    top: 0%;
+    left: 0%;
+
+    display: flex;
+    visibility: hidden;
+
+    /*
+    border-right: transparent;
+    border-bottom: transparent;
+    border-left: transparent;
+    border-top: white 5px;*/
+
+}
+
+label {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    transform: translateX(-50%,-50%);
+    top: 0%;
+
+    color: white;
+
+}
+
+
+#btnValidation {
+    visibility: hidden;
+}
+
+
+
