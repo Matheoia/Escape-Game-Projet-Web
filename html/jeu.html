@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu</title>
+    <link rel="shortcut icon" href="../image/iconMario.png"/>
+    <link rel="stylesheet" href="../css/jeu.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+    integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+    integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+    crossorigin=""></script>
+</head>
+<body> <!-- Page du jeu -->
+    <a id="home" href="../php/accueil.php"><img src="../image/home.png"></a>
+    <div id="divScore">Score : <span id="score">1000</span></div>
+    <div id="jeu">
+        <div id="barre">
+            <div id="backpack"></div>
+            <div id="suspects"></div>
+        </div>
+        <div id="inventaire"></div>
+        <div id="map"></div>
+        <div id="suspects-container">
+            <!-- représente l'onglet des suspects -->
+            <img id="carte" src="../image/carte.png">
+            <div id="gridSuspects"></div>
+            <div id="suspect-choisi" ></div>
+            <div id="historique-indice"> 
+                <div id="imageNoirCsM"><img src="../image/chateauNoir/champsSurMarne.png"></div><div id="indiceCsM"></div>
+                <div id="imageNoirChambord"><img src="../image/chateauNoir/chambord.png"></div><div id="indiceChambord"></div>
+                <div id="imageNoirAngers"><img src="../image/chateauNoir/angers.png"></div><div id="indiceAngers"></div>
+                <div id="imageNoirVersailles"><img src="../image/chateauNoir/versailles.png"></div><div id="indiceVersailles"></div>
+                <div id="imageNoirChantilly"><img src="../image/chateauNoir/chantilly.png"></div><div id="indiceChantilly"></div>
+            </div>
+        </div>
+        <div id="endgame">
+            <!-- dialogue de fin  -->
+            <div id="main_caract"></div>
+            <div id="ganon"></div>
+            <div id="dialogue" Align=Center><p id="p_dialogue"></p></div>
+            <div id="fond"></div>
+        </div>
+        <div id="identification">
+            <!-- Form de fin pour se login et envoyer le score -->
+            <h1>Bravo !</h1>
+            <h4>Vous avez enfin trouver le voleur derrière toute cette histoire.</h4>
+            <form id="form" method="post" action="../php/fin.php">
+                  <input type="hidden" name="perso" value="">
+                  <input type="text" placeholder="Pseudo" name="pseudo" required>
+                  <input type="hidden" name="score" value="">
+                  <input type="submit" value="Voir votre score">
+            </form>
+            <h6>En espérant que vous l'ayez apprécié, merci d'avoir joué à ce jeu</h6>
+        </div>
+        
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/jeu.js" charset="UTF-8"></script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
