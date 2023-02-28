@@ -1,0 +1,32 @@
+/* Chateau de Champs-sur-Marne */
+1) La clé est à l'ENSG
+2) Recliquer sur le château 
+3) Aller à Chambord
+
+/* Chateau de Chambord */
+1) Le code est 0534
+2) Direction Angers
+
+/* Chateau d'Angers */
+1) La réponse est Angers, 
+bonus de point pour ceux mettant "Yzernay", là où j'habite..
+
+/* Chateau de Versailles */
+1) Il y a un bassin vers l'ouest du château qui est en forme de croix
+   Il y a une croix bleu au centre de cette croix bleu
+   en 48.810165 2.100078
+
+/* Chateau de Chantilly */
+1) La réponse est donné : g6. 
+   Un problème d'échecs que l'on sait difficile même pour 
+   quelqu'un connaissant juste comment bougent les pièces.
+
+/* Chateau d'Hyrule */
+1) Jonathan, évidemment
+2) la poule
+3) papier 
+
+On sait que ces énigmes ne sont pas folles, que l'inventaire 
+ne sert pas vraiment pour l'instant mais l'on pensait 
+peut-être ajouter des objets types type récompenses qui 
+serviraient pour les énigmes. Cela ne s'est pas fait finalement.
